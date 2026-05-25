@@ -1,4 +1,4 @@
-# 🚗 Aulas de Programação Orientada a Objetos (POO)
+# Aulas de Programação Orientada a Objetos (POO)
 
 Este repositório foi criado para armazenar e organizar todos os códigos, exemplos e exercícios práticos desenvolvidos durante as aulas de **Programação Orientada a Objetos (POO)** utilizando a linguagem Java.
 
@@ -6,7 +6,7 @@ O foco principal é consolidar os pilares da POO e aprender a escrever códigos 
 
 ---
 
-## 🚀 Conceitos Estudados
+## Conceitos Estudados
 
 Até o momento, o repositório cobre os seguintes conceitos fundamentais do paradigma orientado a objetos:
 
