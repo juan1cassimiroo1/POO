@@ -1,0 +1,61 @@
+package app;
+
+import veiculos.terrestre.Carro;
+import veiculos.aereo.JatoGuerra;
+import veiculos.aquatico.Jetski;
+
+//import veiculos.Veiculo;
+//import veiculos.terrestre.Terrestre;
+
+public class Main {
+    public static void main(String[]args){
+        // Não é permitido instanciar objeto da classe Veiculo
+        //Veiculo veiculo_1 = new Veiculo("Fusca");
+        //Terrestre terrestre_1 = new Terrestre("Tanque");
+
+        Carro carro_1 = new Carro("Opala", 4, "Gasolina");
+
+        carro_1.acelerar(100);
+        carro_1.mover();
+        carro_1.desacelerar(20);
+        carro_1.mover();
+        carro_1.mostrarInfo();
+
+        Carro carro_2 = new Carro("BYD Dolphin", 4, "Elétrico");
+        carro_2.mostrarInfo();
+
+        JatoGuerra jato_1 = new JatoGuerra("F-16", 20);
+        jato_1.acelerar(2100);
+        jato_1.ganharAltitude(50000);
+        jato_1.mover();
+        for(int i=0; i < 10; i++){
+            jato_1.atirarMissel();
+        }
+        jato_1.perderAltitude(50000);
+        jato_1.desacelerar(2100);
+        jato_1.mostrarInfo();
+
+        Jetski jetski_1 = new Jetski("Yamaha FX", true, 2);
+        jetski_1.acelerar(50);
+        jetski_1.mover();
+        jetski_1.desacelerar(40);
+        jetski_1.mostrarInfo();
+
+        // Criar carro Fuscão Preto, 4 rodas, Etanol
+        // Embaracar 8 pessoas, ligar o motor,
+        // Acelerar até 100km/h, desacelerar até 80km/h
+        // Desacelerar atér parar, desligar motor
+        // Desembarcar os 8 passageiros
+        Carro carro_3 = new Carro("Fuscão Preto", 4, "Etanol");
+        carro_3.embarcar(8);
+        carro_3.ligarMotor();
+        carro_3.acelerar(100);
+        carro_3.mover();
+        carro_3.desacelerar(20);
+        carro_3.mover();
+        carro_3.desacelerar(80);
+        carro_3.mover();
+        carro_3.desligarMotor();
+        carro_3.desembarcar(8);
+    }
+}
